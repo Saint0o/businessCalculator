@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#999999</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="operations">#b0b0b0</color>
+    <color name="numbers">#cdccc8</color>
+    <color name="undo">#bb9799</color>
+    <color name="operations_press">#999999</color>
+    <color name="numbers_press">#9f9f9f</color>
+    <color name="undo_press">#a27f81</color>
+
+</resources>

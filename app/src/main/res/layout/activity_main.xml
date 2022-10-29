@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/M"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#002E2D2D" />
+
+        <TextView
+            android:id="@+id/scr"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:text="@string/_0"
+            android:textAlignment="textEnd"
+            android:textColor="#030303"
+            android:textSize="40dp"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:weightSum="6">
+
+            <LinearLayout
+                android:id="@+id/keyboard4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <Button
+                    android:id="@+id/clearbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_undo"
+                    android:onClick="onButtonClickC"
+                    android:text="@string/clear"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,NestedWeights,SpUsage" />
+
+                <Button
+                    android:id="@+id/MCbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="Mc"
+                    android:text="@string/MC"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/MRbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="MR"
+                    android:text="@string/MR"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/Mminusbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="Mmn"
+                    android:text="@string/Mminus"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/Mplusbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="Mpl"
+                    android:text="@string/Mplus"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keyboard5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <Button
+                    android:id="@+id/sin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="Sin"
+                    android:text="@string/sin"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,NestedWeights,SpUsage" />
+
+                <Button
+                    android:id="@+id/cos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="Cos"
+                    android:text="@string/cos"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/tn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="Tan"
+                    android:text="@string/tan"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/brackets"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="brackets"
+                    android:text="@string/brackets"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/plmn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="plmn"
+                    android:text="@string/plmn"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keybordLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sevenbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClick7"
+                    android:text="@string/seven"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,NestedWeights,SpUsage" />
+
+                <Button
+                    android:id="@+id/eightbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClick8"
+                    android:text="@string/eight"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/ninebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClick9"
+                    android:text="@string/nine"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/sqrbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="getstepen"
+                    android:text="@string/sqr"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+
+                <Button
+                    android:id="@+id/sqrtbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="sqrttt"
+                    android:text="@string/sqrt"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keybordLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fourbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClick4"
+                    android:text="@string/four"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,NestedWeights,SpUsage" />
+
+                <Button
+                    android:id="@+id/fivebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClick5"
+                    android:text="@string/five"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/sixbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClick6"
+                    android:text="@string/six"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/percbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="percent"
+                    android:text="@string/percent"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/dividebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="del"
+                    android:text="@string/divide"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keybordLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/onebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClick1"
+                    android:text="@string/one"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,NestedWeights,SpUsage" />
+
+                <Button
+                    android:id="@+id/twobutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClick2"
+                    android:text="@string/two"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/threebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClick3"
+                    android:text="@string/three"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/multibutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="umn"
+                    android:text="@string/multi"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/minesbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="minus"
+                    android:text="@string/minus"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keyboardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ZeroZeroebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="brackets"
+                    android:text="@string/ZeroZero"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,NestedWeights,SpUsage" />
+
+                <Button
+                    android:id="@+id/zerobutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClick0"
+                    android:text="@string/zero"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/pointbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations"
+                    android:onClick="onButtonClickPoint"
+                    android:text="@string/point"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/plusbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="plus"
+                    android:text="@string/plus"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+                <Button
+                    android:id="@+id/resbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_operations1"
+                    android:onClick="SUM"
+                    android:text="@string/res"
+                    android:textSize="40dp"
+                    tools:ignore="ButtonStyle,InOrMmUsage,SpUsage" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
